@@ -24,7 +24,8 @@ console.log(person1 instanceof Person); // true
 console.log(person2 instanceof Object); // true
 console.log(person2 instanceof Person); // true
 
-
+// Prototype of instance shows something useful!
+console.log(Object.getPrototypeOf(person1)); // Person
 
 // Be careful! doing this outside strict mode adds things GLOBALLY because
 // 'this' points to the global object ('window' in a browser environment)

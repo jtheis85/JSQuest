@@ -12,9 +12,9 @@ function createPerson(age, name, job) {
     };
 }
 
-
 var person = createPerson(30, 'Joe', 'Software Developer');
 person.sayName();
 
 // Just a plain old object :(
 console.log(person instanceof createPerson); // false
+console.log(Object.getPrototypeOf(person));
