@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="JS Attribute Value" onclick="alert('JS attribute value clicked!')"/>
+    <input type="button" value="Inline Script" onclick="showMessage()"/>
+    <input type="button" value="Event Type" onclick="alert(event.type)"/>
+    <input type="button" value="This value" onclick="alert(this)"/>
+    <input type="button" value="Element Properties" onclick="alert(value)"/>
+    <form method="post">
+        <input type="text" name="formproperties" value=""/>
+        <input type="button" value="Form Properties" onclick="alert(formproperties.value)"/>
+    </form>
+    <script type="text/javascript">
+        function showMessage() {
+            alert('Inline script clicked!');
+        }
+    </script>
+</body>
+</html>
